@@ -1,0 +1,10 @@
+@import './colors.scss';
+
+.page-template {
+    width: 100%;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}

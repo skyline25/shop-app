@@ -1,0 +1,39 @@
+@import './colors.scss';
+
+.nav {
+    text-align: center;
+    
+    &__link {
+        position: relative;
+        display: inline-block;
+        margin: 0 1rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $primary-color;
+
+        &.is-active {
+            border-bottom: 2px solid $primary-color;
+        }
+    }
+
+    &__quantity {
+        position: absolute;
+        top: -0.25rem;
+        right: -1rem;
+        display: none;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        font-size: .75rem;
+        line-height: 1rem;
+        text-align: center;
+        color: $card-background-color;
+        background: $accent-color;
+
+        &.visible {
+            display: block;
+        }
+    }
+}

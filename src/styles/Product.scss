@@ -1,0 +1,29 @@
+@import './colors.scss';
+
+.product {
+    display: flex;
+    padding-top: 2rem;
+
+    &-info,
+    &-image {
+        width: 50%;
+        height: auto;
+    }
+
+    &-info {
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    &-image {
+        padding-right: 15px;
+        box-sizing: border-box;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    
+}

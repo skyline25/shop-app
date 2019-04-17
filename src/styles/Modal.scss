@@ -1,0 +1,68 @@
+@import './colors.scss';
+@import './variables.scss';
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    background: $secondary-text-color;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 11;
+    }
+
+    &__content {
+        position: absolute;
+        top: calc(50% - #{$height/2});
+        right: calc(50% - #{$width/2});
+        z-index: 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $width;
+        height: $height;
+        padding: 2rem 3rem;
+        box-sizing: border-box;
+        background: $card-background-color;
+    }
+    
+    &__button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2rem;
+        height: 2rem;
+        font-size: 2rem;
+        line-height: 1.75rem;
+        text-align: center;
+        cursor: pointer;
+        
+        &_close {
+            background: $accent-color;
+            color: $card-background-color;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: $primary-color;
+        cursor: pointer;
+
+        &_name {
+            text-transform: none;
+        }
+    }
+    
+    &.is-open {
+        display: block;
+    }
+}
