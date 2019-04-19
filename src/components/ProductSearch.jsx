@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import '../styles/ProductSearch.scss'
 
-const ProductSearch = ({onChange}) => {
+const ProductSearch = ({ onChange }) => {
     return (
         <div className="product-search">
             <input

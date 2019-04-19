@@ -28,11 +28,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         width: $width;
         height: $height;
-        padding: 2rem 3rem;
+        padding: 1rem 1rem;
         box-sizing: border-box;
         background: $card-background-color;
+        text-align: center;
     }
     
     &__button {

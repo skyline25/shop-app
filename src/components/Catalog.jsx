@@ -1,16 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import Typography from '@material-ui/core/Typography'
+import Divider from '@material-ui/core/Divider'
 import PageTemplate from './PageTemplate'
 // import ProductSearch from './ProductSearch'
 import ProductList from './ProductList'
-import Modal from './Modal'
 import { SortMenuContainer } from '../containers';
 
 const Catalog = ({
     products,
     sort,
-    // modal,
     // onSearch,
     onBuyButtonClick=f=>f,
     onProductClick=f=>f
@@ -18,7 +17,12 @@ const Catalog = ({
     return (
         <PageTemplate>
             <div>
-                <h1>Catalog</h1>
+                <Typography
+                    component="h1" 
+                    variant="h3"
+                    paragraph
+                >Catalog</Typography>
+                <Divider/>
                 {/* <ProductSearch
                     onChange={onSearch}
                 /> */}
@@ -29,17 +33,15 @@ const Catalog = ({
                     onBuyButtonClick={onBuyButtonClick}
                     onProductClick={onProductClick}
                 />
-                {/* <Modal
-                    modal={modal}
-                /> */}
             </div>
         </PageTemplate>
     )
 }
 
 Catalog.propTypes = {
-    productList: PropTypes.array,
-    onSearch: PropTypes.func,
+    products: PropTypes.array,
+    sort: PropTypes.string,
+    // onSearch: PropTypes.func,
     onBuyButtonClick: PropTypes.func,
     onProductClick: PropTypes.func
 }

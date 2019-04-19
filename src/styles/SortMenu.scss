@@ -2,6 +2,8 @@
 
 .sort-menu {
     text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
     
     &__header {
         display: inline-block;
@@ -17,12 +19,14 @@
         margin-left: 1rem;
         color: lighten($text-color, 50%);
         font-size: 1rem;
-        font-weight: 700;
+        font-weight: 300;
         text-decoration: none;
 
-        &:hover,
+        // &:hover,
         &.selected {
-            color: $text-color;
+            // color: $text-color;
+            font-weight: 700;
+            // border-bottom: 1px solid $text-color;
         }
     }
 }
