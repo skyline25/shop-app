@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 import '../styles/Menu.scss'
 
@@ -41,6 +42,10 @@ const Menu = ({
             </NavLink>
         </nav>
     )
+}
+
+Menu.propTypes = {
+    products: PropTypes.array
 }
 
 export default Menu

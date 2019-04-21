@@ -53,8 +53,9 @@ const Cart = ({
 Cart.propTypes = {
     history: PropTypes.object,
     products: PropTypes.array,
-    onRemoveClick: PropTypes.func
+    onProductClick: PropTypes.func,
+    onRemoveClick: PropTypes.func,
+    onChangeQuantity: PropTypes.func
 }
 
 export default Cart
-

@@ -4,13 +4,11 @@ import PropTypes from 'prop-types'
 import PageTemplate from './PageTemplate'
 // import ProductSearch from './ProductSearch'
 import ProductList from './ProductList'
-import Modal from './Modal'
 import { SortMenuContainer } from '../containers';
 
 const Catalog = ({
     products,
     sort,
-    // modal,
     // onSearch,
     onBuyButtonClick=f=>f,
     onProductClick=f=>f
@@ -29,9 +27,6 @@ const Catalog = ({
                     onBuyButtonClick={onBuyButtonClick}
                     onProductClick={onProductClick}
                 />
-                {/* <Modal
-                    modal={modal}
-                /> */}
             </div>
         </PageTemplate>
     )
@@ -39,7 +34,8 @@ const Catalog = ({
 
 Catalog.propTypes = {
     productList: PropTypes.array,
-    onSearch: PropTypes.func,
+    sort: PropTypes.string,
+    // onSearch: PropTypes.func,
     onBuyButtonClick: PropTypes.func,
     onProductClick: PropTypes.func
 }

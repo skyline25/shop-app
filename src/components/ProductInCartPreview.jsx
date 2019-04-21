@@ -23,7 +23,6 @@ const ProductInCartPreview = ({
             </div>
             <span className="cart-item__title" onClick={onProductClick}>{title}</span>
             {/* <span className="cart-item__warranty">Warranty: <strong>{warranty}</strong></span> */}
-            {/* <span className="cart-item__quantity"><strong>{price} $</strong></span> */}
             <span className="cart-item__quantity">
                 <strong>Qty: <input
                     className="cart-item__input" 
@@ -45,10 +44,12 @@ const ProductInCartPreview = ({
 ProductInCartPreview.propTypes = {
     title: PropTypes.string,
     image: PropTypes.string,
-    warranty: PropTypes.number,
-    // quantity: PropTypes.number,
+    // warranty: PropTypes.number,
+    quantity: PropTypes.number,
     price: PropTypes.number,
-    onRemoveClick: PropTypes.func
+    onRemoveClick: PropTypes.func,
+    onProductClick: PropTypes.func,
+    onChangeQuantity: PropTypes.func,
 }
 
 export default ProductInCartPreview

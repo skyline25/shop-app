@@ -20,7 +20,7 @@ const Product = ({
         warranty,
         price,
         manufacturer
-    } = products.find(product=>product.id===match.params.productId)
+    } = products.find( product => product.id === match.params.productId )
     
     return (
         <PageTemplate>

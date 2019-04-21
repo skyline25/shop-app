@@ -1,5 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import '../styles/Modal.scss'
 
 const Modal = ({
@@ -51,6 +52,15 @@ const Modal = ({
             </div>
         </div>
     )
+}
+
+Modal.propTypes = {
+    modal: PropTypes.object,
+    products: PropTypes.array,
+    history: PropTypes.object,
+    onModalClose: PropTypes.func,
+    onGoToCartClick: PropTypes.func,
+    onProductClick: PropTypes.func,
 }
 
 export default withRouter(Modal)

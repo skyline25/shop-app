@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button'
 import '../styles/ProductPreview.scss'
 
 const ProductPreview = ({
-    productId,
+    // productId,
     title,
     image,
     description,
@@ -20,10 +20,8 @@ const ProductPreview = ({
     onProductClick,
     // history
 }) => {    
-
     return (
         // <li className="preview" onClick={()=>onProductClick(history,productId)}>
-        // <li className="preview">
         <li className="preview" onClick={onProductClick}>
             <h3 className="preview-title">{title}</h3>
             <img 
@@ -51,16 +49,16 @@ const ProductPreview = ({
 }
 
 ProductPreview.propTypes = {
-    productId: PropTypes.string,
+    // productId: PropTypes.string,
     title: PropTypes.string,
     image: PropTypes.string,
     description: PropTypes.string,
     warranty: PropTypes.number,
     price: PropTypes.number,
     manufacturer: PropTypes.string,
-    // onBuyButtonClick: PropTypes.func,
+    onBuyButtonClick: PropTypes.func,
     onProductClick: PropTypes.func,
-    history: PropTypes.object
+    history: PropTypes.object,
 }
 
-export default withRouter(ProductPreview);
+export default withRouter(ProductPreview)

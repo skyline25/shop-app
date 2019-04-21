@@ -9,9 +9,9 @@ import '../styles/ProductList.scss'
 const ProductList = ({ 
     products,
     sort,
+    history,
     onBuyButtonClick,
     onProductClick,
-    history
 }) => {
     return (
         <div>
@@ -21,7 +21,7 @@ const ProductList = ({
                         sortFunction(sort,products).map(product =>
                             <ProductPreview
                                 key={product.id}
-                                productId={product.id}
+                                // productId={product.id}
                                 title={product.title}
                                 image={product.image}
                                 description={product.description}
@@ -40,7 +40,9 @@ const ProductList = ({
 }
 
 ProductList.propTypes = {
+    sort: PropTypes.string,
     products: PropTypes.array,
+    history: PropTypes.object,
     onBuyButtonClick: PropTypes.func,
     onProductClick: PropTypes.func
 }
