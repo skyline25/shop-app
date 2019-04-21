@@ -16,12 +16,11 @@ const ProductList = ({
     return (
         <div>
             <h2>Product list</h2>
-                <ul className="product-list">
+                <ul className="product-list container wrap">
                     {
                         sortFunction(sort,products).map(product =>
                             <ProductPreview
                                 key={product.id}
-                                // productId={product.id}
                                 title={product.title}
                                 image={product.image}
                                 description={product.description}

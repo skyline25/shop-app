@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Button from '@material-ui/core/Button'
 
 import PageTemplate from './PageTemplate'
 
@@ -11,7 +10,6 @@ const Product = ({
     products,
     onBuyButtonClick
 }) => {
-    console.log(match)
     let {
         id,
         image,
@@ -24,7 +22,7 @@ const Product = ({
     
     return (
         <PageTemplate>
-            <div className="product">
+            <div className="product container wrap">
                 <div className="product-image">
                     <img src={image} alt={title}/>
                 </div>
@@ -35,15 +33,10 @@ const Product = ({
                     <p><strong>Warranty: {warranty} month</strong></p>
                     <p><strong>By {manufacturer}</strong></p>
                     <p><strong>Price: {price} $</strong></p>
-                    {/* <button 
-                        className="preview-button"
+                    <button 
+                        className="button primary"
                         onClick={(event) => onBuyButtonClick(event, id)}
-                    >Buy</button> */}
-                    <Button
-                        onClick={(event) => onBuyButtonClick(event, id)}
-                        color="secondary"
-                        variant="contained"
-                    >Buy</Button>
+                    >Buy</button>
                 </div>
             </div>  
         </PageTemplate>

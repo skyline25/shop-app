@@ -11,13 +11,10 @@ const Modal = ({
     onProductClick,
     history
 }) => {
+    let title = ''
+    
     if (modal.isOpen) {
-        console.log(   
-            products
-                .filter(product=>product.quantityInCart>0)
-                .find(product=>product.id===modal.id)
-                .quantityInCart
-        )
+        title = products.find( product => product.id === modal.id ).title
     }
 
     return (
@@ -30,17 +27,7 @@ const Modal = ({
                         className="modal__link modal__link_name"
                         onClick={()=>onProductClick(history,modal.id)}
                     >
-                    {modal.isOpen?
-                        products.find(product=>product.id===modal.id).title:
-                        "Undefined"}
-                    </span> is already in 
-                    {/* Not working */}
-                    {/*modal.isOpen&&products
-                        .find(product=>product.id===modal.id)
-                        .quantityInCart===0?
-                        ` - successfull added to `:
-                        ` - is already in `*/}
-                    <span
+                    {title}</span> is already in <span
                         className="modal__link"
                         onClick={()=>onGoToCartClick(history)}
                     > cart</span>

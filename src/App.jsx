@@ -15,9 +15,7 @@ import {
   ProductContainer 
 } from './containers'
 import Page404 from './components/Page404'
-
-import 'typeface-roboto'
-import './App.scss'
+import './styles/common.scss'
 
 const App = () => {
   return (
@@ -26,18 +24,18 @@ const App = () => {
         <div className="app">
           <Switch>
             <Route exact path="/" component={Home}></Route>
+            <Route exact path="/catalog" component={CatalogContainer}></Route>
+            <Route path="/catalog/:productId" component={ProductContainer}></Route>
+            <Route path="/cart" component={CartContainer}></Route>
+            <Route component={Page404}></Route>
             
+            {/* TODO: Перенести фильтр из состояния в роутер */}
             {/* <Route exact path="/catalog" component={()=>(
               <Switch>
                 <Route path="/catalog" component={CatalogContainer}></Route>
                 <Route path="/catalog/sort/:sort" component={CatalogContainer}></Route>
               </Switch>
             )} /> */}
-
-            <Route exact path="/catalog" component={CatalogContainer}></Route>
-            <Route path="/catalog/:productId" component={ProductContainer}></Route>
-            <Route path="/cart" component={CartContainer}></Route>
-            <Route component={Page404}></Route>
           </Switch>
           <ModalContainer/>
         </div>

@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import './variables.scss';
 
 .nav {
     text-align: center;
@@ -11,10 +11,10 @@
         font-weight: 700;
         text-transform: uppercase;
         text-decoration: none;
-        color: $primary-color;
+        color: $primaryColor;
 
         &.is-active {
-            border-bottom: 2px solid $primary-color;
+            border-bottom: 2px solid $primaryColor;
         }
     }
 
@@ -29,8 +29,8 @@
         font-size: .75rem;
         line-height: 1rem;
         text-align: center;
-        color: $card-background-color;
-        background: $accent-color;
+        color: $cardBackgroundColor;
+        background: $accentColor;
 
         &.visible {
             display: block;

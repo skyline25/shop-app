@@ -34,7 +34,7 @@ const ProductInCartPreview = ({
                 /> pc.</strong></span>
             <span className="cart-item__quantity"><strong>Price: {quantity*price} $</strong></span>
             <button 
-                className="preview-button"
+                className="button secondary"
                 onClick={onRemoveClick}
             >Remove</button>
         </li>

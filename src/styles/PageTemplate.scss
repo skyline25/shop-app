@@ -1,10 +1,10 @@
-@import './colors.scss';
+@import './variables.scss';
 
 .page-template {
     width: 100%;
-    max-width: 1024px;
+    max-width: $layoutWidth;
     margin-right: auto;
     margin-left: auto;
-    padding: 1rem;
+    padding: $layoutGutter;
     box-sizing: border-box;
 }

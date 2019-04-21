@@ -1,3 +1,33 @@
+// BREACKPOINTS
+$mobileScreen             : 568px;
+$tabletScreen             : 768px;
+$desktopScreen            : 1024px;
+
+// TYPOGRAPHY
+$fontBase                 : 16px;
+$fontExtraSmall           : $fontBase * 0.5;
+$fontSmall                : $fontBase * 0.75;
+$fontLarge                : $fontBase * 1.25;
+$fontExtraLarge           : $fontBase * 1.75;
+$fontExtraExtraLarge      : $fontBase * 2;
+
+// COLORS
+$backgroundColor          : #eaeaea;
+$textColor                : #545454;
+$additionalTextColor      : rgba(0,0,0,0.67);
+$secondaryTextColor       : rgba(0,0,0,0.54);
+$hintTextColor            : rgba(0,0,0,0.26);
+$dividerColor             : rgba(0,0,0,0.12);
+$primaryColor             : #00BCD4;
+$secondaryColor           : #FF4081;
+$accentColor              : #FF4081;
+$contrastTextColor        : rgba(255,255,255,0.9);
+$cardBackgroundColor      : #fff;
+
+// LAYOUT
+$layoutWidth              : 1024px;
+$layoutGutter             : 16px;
+
 // Modal window
-$width: 480px;
-$height: 160px;
+$width                    : 480px;
+$height                   : 160px;
