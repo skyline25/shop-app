@@ -15,23 +15,24 @@ const ProductPreview = ({
     onProductClick,
 }) => {    
     return (
-        <li className="preview" onClick={onProductClick}>
+        <li className="card preview">
             <img 
-                className="preview-image" 
-                src={image} 
-                width="200px" 
-                height="200px"
-                alt={title}
+                className="card-image" 
+                src={image}
+                alt={title} 
+                onClick={onProductClick}
             />
-            <h3 className="preview-title">{title}</h3>
-            <p className="preview-description">{description}</p>
-            <p><strong>Warranty: {warranty} month</strong></p>
-            <p><strong>Price: {price} $</strong></p>
-            <p><strong>By {manufacturer}</strong></p>
-            <button 
-                className="button primary"
-                onClick={onBuyButtonClick}
-            >Buy</button>
+            <div className="card-info">
+                <h3 className="card-title" onClick={onProductClick}>{title}</h3>
+                <p className="card-description">{description}</p>
+                <p className="card-properties"><strong>Warranty: {warranty} month</strong></p>
+                <p className="card-properties"><strong>Price: {price} $</strong></p>
+                <p className="card-properties"><strong>By {manufacturer}</strong></p>
+                <button 
+                    className="button primary"
+                    onClick={onBuyButtonClick}
+                >Buy</button>
+            </div>
         </li>
     )
 }

@@ -27,7 +27,7 @@ const Modal = ({
                         className="modal__link modal__link_name"
                         onClick={()=>onProductClick(history,modal.id)}
                     >
-                    {title}</span> is already in <span
+                    {title}</span><br/>is already in <span
                         className="modal__link"
                         onClick={()=>onGoToCartClick(history)}
                     > cart</span>

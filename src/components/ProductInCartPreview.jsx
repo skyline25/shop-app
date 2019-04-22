@@ -21,10 +21,12 @@ const ProductInCartPreview = ({
                     alt={title}
                 />
             </div>
-            <span className="cart-item__title" onClick={onProductClick}>{title}</span>
+            <span className="cart-item__title">
+                <span onClick={onProductClick}>{title}</span>
+            </span>
             {/* <span className="cart-item__warranty">Warranty: <strong>{warranty}</strong></span> */}
             <span className="cart-item__quantity">
-                <strong>Qty: <input
+                <strong><span className="sub-title">Qty: </span><input
                     className="cart-item__input" 
                     type="number"
                     name="quantity" 
@@ -32,7 +34,7 @@ const ProductInCartPreview = ({
                     value={quantity}
                     onChange={onChangeQuantity}
                 /> pc.</strong></span>
-            <span className="cart-item__quantity"><strong>Price: {quantity*price} $</strong></span>
+            <span className="cart-item__quantity"><strong><span className="sub-title">Price: </span>{quantity*price} $</strong></span>
             <button 
                 className="button secondary"
                 onClick={onRemoveClick}

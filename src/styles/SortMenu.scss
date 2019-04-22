@@ -1,12 +1,11 @@
-@import './variables.scss';
+@import './common/variables.scss';
 
 .sort-menu {
     text-transform: uppercase;
     
     &__header {
         display: inline-block;
-        font-size: 1rem;
-        font-weight: 700;
+        font-size: $fontBase;
     }
     
     &__list {
@@ -14,15 +13,24 @@
     }
 
     &__item {
-        margin-left: 1rem;
-        color: lighten($textColor, 50%);
-        font-size: 1rem;
+        margin-left: $layoutGutter / 2;
+        color: lighten( $textColor, 25% );
+        font-size: $fontBase;
         font-weight: 700;
         text-decoration: none;
+        transition: $transitionNormal;
 
         &:hover,
         &.selected {
             color: $textColor;
         }
     }
+}
+
+@media screen and (min-width: $mobileScreen) {
+    .sort-menu {
+        &__item {
+            margin-left: $layoutGutter;
+        }
+    }        
 }

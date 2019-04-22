@@ -23,11 +23,13 @@ $secondaryColor           : #FF4081;
 $accentColor              : #FF4081;
 $contrastTextColor        : rgba(255,255,255,0.9);
 $cardBackgroundColor      : #fff;
+$colorWhite               : #fff;
 
 // LAYOUT
 $layoutWidth              : 1024px;
 $layoutGutter             : 16px;
 
-// Modal window
-$width                    : 480px;
-$height                   : 160px;
+// ANIMATION
+$transitionNone           : none;
+$transitionNormal         : all .33s ease;
+$transitionSlow           : all .66s ease;

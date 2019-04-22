@@ -15,7 +15,7 @@ import {
   ProductContainer 
 } from './containers'
 import Page404 from './components/Page404'
-import './styles/common.scss'
+import './styles/common/common.scss'
 
 const App = () => {
   return (

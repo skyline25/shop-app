@@ -23,10 +23,11 @@ const Product = ({
     return (
         <PageTemplate>
             <div className="product container wrap">
-                <div className="product-image">
-                    <img src={image} alt={title}/>
-                </div>
-                
+                <img 
+                    className="product-image" 
+                    src={image} 
+                    alt={title}
+                />                
                 <div className="product-info">
                     <h1>{title}</h1>
                     <p>{description}</p>

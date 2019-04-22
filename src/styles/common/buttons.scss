@@ -5,14 +5,15 @@
   border: none;
   color: $cardBackgroundColor;
   font-size: $fontBase;
-  font-weight: 700;transition: all .33s ease;
+  font-weight: 700;
+  transition: $transitionNormal;
   cursor: pointer;
   
   &.primary {
     background: $primaryColor;
     
     &:hover {
-        background: darken($primaryColor,25%);
+        background: darken( $primaryColor, 25% );
     }
   }
 
@@ -20,7 +21,7 @@
      background: $secondaryColor;
     
      &:hover {
-      background: darken($secondaryColor,25%);
+      background: darken( $secondaryColor, 25% );
      }
   }
 
