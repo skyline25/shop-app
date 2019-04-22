@@ -10,10 +10,10 @@ import store from './store/store'
 import Home from './components/Home'
 import { 
   CartContainer, 
-  CatalogContainer,
   ModalContainer, 
   ProductContainer 
 } from './containers'
+import Catalog from './components/Catalog'
 import Page404 from './components/Page404'
 import './styles/common/common.scss'
 
@@ -24,7 +24,7 @@ const App = () => {
         <div className="app">
           <Switch>
             <Route exact path="/" component={Home}></Route>
-            <Route exact path="/catalog" component={CatalogContainer}></Route>
+            <Route exact path="/catalog" component={Catalog}></Route>
             <Route path="/catalog/:productId" component={ProductContainer}></Route>
             <Route path="/cart" component={CartContainer}></Route>
             <Route component={Page404}></Route>

@@ -16,6 +16,7 @@ import Menu from './components/Menu'
 import Product from './components/Product'
 import SortMenu from './components/SortMenu'
 import Modal from './components/Modal'
+import ProductList from './components/ProductList';
 
 export const CartContainer = connect(
     state => ({
@@ -34,7 +35,7 @@ export const CartContainer = connect(
     })
 )(Cart)
 
-export const CatalogContainer = connect(
+export const ProductListContainer = connect(
     state => ({
         products: state.products,
         sort: state.sort,
@@ -47,7 +48,7 @@ export const CatalogContainer = connect(
             dispatch(clickOnProductPreview(history, id))
         }
     })
-)(Catalog)
+)(ProductList)
 
 export const ProductContainer = connect(
     state => ({
