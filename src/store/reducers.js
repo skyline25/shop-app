@@ -6,8 +6,6 @@ export const products = ( state=[], action ) => {
     
     switch (action.type) {
         case C.ADD_TO_CART:
-            action.event.stopPropagation()
-            
             if (selectedProduct.quantityInCart===0) {
                 selectedProduct.quantityInCart=1    
                 return [...state]

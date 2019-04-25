@@ -11,7 +11,6 @@ import {
 } from './actions'
 
 import Cart from './components/Cart'
-import Catalog from './components/Catalog'
 import Menu from './components/Menu'
 import Product from './components/Product'
 import SortMenu from './components/SortMenu'

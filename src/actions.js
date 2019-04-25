@@ -1,10 +1,23 @@
 import C from './constants'
 
-export const addToCart = (event, id) => ({
-    type: C.ADD_TO_CART,
-    event,
-    id
-})
+export const addToCart = (event, id) => (
+//  {
+//      type: C.ADD_TO_CART,
+//      event,
+//      id
+//  }
+    (dispatch) => {
+        dispatch({
+            type: C.ADD_TO_CART,
+            event,
+            id
+        })
+        setTimeout(() =>
+            dispatch({ type: C.CLOSE_MODAL }),
+            2500
+        )
+    }
+)
 
 export const removeFromCart = (event, id) => ({
     type: C.REMOVE_FROM_CART,
