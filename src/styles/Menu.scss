@@ -1,0 +1,48 @@
+@import './common/variables.scss';
+
+.nav {
+    text-align: center;
+    
+    &__link {
+        position: relative;
+        display: inline-block;
+        margin: 0 $layoutGutter * 2 / 3;
+        font-size: $fontLarge;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $primaryColor;
+        transition: $transitionNormal;
+
+        &.is-active {
+            border-bottom: 2px solid $primaryColor;
+        }
+    }
+
+    &__quantity {
+        position: absolute;
+        top: -0.25rem;
+        right: -1rem;
+        display: none;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        font-size: $fontSmall;
+        line-height: $fontBase;
+        text-align: center;
+        color: $colorWhite;
+        background: $accentColor;
+
+        &.visible {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: $mobileScreen) {
+    .nav {
+        &__link {
+             margin: 0 $layoutGutter;
+        }
+    }    
+}

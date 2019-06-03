@@ -1,0 +1,28 @@
+.button {
+  width: 100px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  color: $cardBackgroundColor;
+  font-size: $fontBase;
+  font-weight: 700;
+  transition: $transitionNormal;
+  cursor: pointer;
+  
+  &.primary {
+    background: $primaryColor;
+    
+    &:hover {
+        background: darken( $primaryColor, 25% );
+    }
+  }
+
+  &.secondary {
+     background: $secondaryColor;
+    
+     &:hover {
+      background: darken( $secondaryColor, 25% );
+     }
+  }
+
+}

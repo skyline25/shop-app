@@ -1,0 +1,18 @@
+@import './common/variables.scss';
+
+.preview {
+    width: 100%;
+    margin-bottom: $layoutGutter * 2;
+}
+
+@media screen and (min-width: $mobileScreen) {
+    .preview {
+        width: calc(50% - #{$layoutGutter / 2});
+    }        
+}
+
+@media screen and (min-width: $tabletScreen) {
+    .preview {
+        width: calc(33% - #{$layoutGutter * 2 / 3});
+    }        
+}

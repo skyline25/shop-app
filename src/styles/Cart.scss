@@ -1,0 +1,6 @@
+@import '../styles/common/variables.scss';
+
+.cart-list {
+  border-top: 1px solid $dividerColor;
+  overflow-x: auto;
+}
