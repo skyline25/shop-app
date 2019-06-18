@@ -2,7 +2,7 @@
     "products": [
         {
             "id": "001",
-            "image": "https://www.adidas.ru/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwb1e44310/zoom/B44691_01_standard.jpg?sh=840&stripfalsesw=840",
+            "image": "https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto:sensitive,fl_lossy/459ff194c35e45ea91b1a8ba00fc4876_9366/NMD_R1_Shoes_White_B42200_01_standard.jpg",
             "title": "First product",
             "manufacturer": "John Doe",
             "price": 100,
@@ -12,7 +12,7 @@
         },
         {
             "id": "003",
-            "image": "https://www.adidas.ru/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw36dd24a7/zoom/G26777_01_standard.jpg?sh=840&stripfalsesw=840",
+            "image": "https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto:sensitive,fl_lossy/5781165a90a349ba84aea8bd009d02bd_9366/Continental_80_Shoes_White_B41680_01_standard.jpg",
             "title": "Third product",
             "manufacturer": "John Doe",
             "price": 300,
@@ -22,7 +22,7 @@
         },
         {
             "id": "004",
-            "image": "https://www.adidas.ru/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw4f775c99/zoom/DA9839_01_standard.jpg?sh=840&stripfalsesw=840",
+            "image": "https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto:sensitive,fl_lossy/8fec5752c88b4bc9ad69aa2c0134195c_9366/Superstar_80s_Shoes_White_EE7392_01_standard.jpg",
             "title": "Fourth product",
             "manufacturer": "John Doe",
             "price": 400,
